@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Estilo das setas */
+.p-carousel-prev, .p-carousel-next {
+    font-size: 24px;  /* Ajuste o tamanho conforme necessário */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo da seta */
+    color: white; /* Cor da seta */
+    border-radius: 50%; /* Tornar a seta redonda */
+    width: 40px; /* Largura */
+    height: 40px; /* Altura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*position: absolute; /* Para ajustar a posição com mais controle */
+    top: 50%; /* Ajuste verticalmente */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    z-index: 20; /* Garante que a seta fique acima de outros elementos */
+}
+
+/* Posição da seta anterior */
+.p-carousel-prev {
+    left: 0px; /* Ajuste a distância da seta esquerda */
+}
+
+/* Posição da seta seguinte */
+.p-carousel-next {
+    right: 0px; /* Ajuste a distância da seta direita */
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE/Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;                  /* Chrome/Safari */
+}
+
+/* Componentes personalizados cor: #090925*/
+@layer components {
+  
+  /* Título sessões responsivo */
+  .title-size {
+    @apply text-center font-bold text-[3.2rem] sm:text-[3.2rem] md:text-[3.8rem] lg:text-[4.2rem] xl:text-[4.7rem] 2xl:text-[5.4rem];
+  }
+  .subtitle-size {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[30%] text-[1.6rem] sm:text-[1.5rem] md:text-[1.9rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.3rem];
+  }
+}
+
