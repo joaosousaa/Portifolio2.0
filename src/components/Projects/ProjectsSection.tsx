@@ -3,7 +3,7 @@ import { CardsCarousel, BigCardGrid } from './Cards';
 
 const ProjectsSection = () => {
     return (
-        <div className="m-auto">
+        <div className="m-auto ">
             <h1 className="text-[1.5rem] sm:text-[1.8rem] md:text-[1.9rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem] font-bold mb-6">
                 Explore Projetos Exclusivos
             </h1>
