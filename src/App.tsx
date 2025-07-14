@@ -4,8 +4,8 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Showwcase from "./components/Showcase/Showcase";
 import Contact from "./components/Contact/Contact"
-
 import Techs from "./components/Techs/Techs";
+
 function App() {
   return (
     <>
@@ -20,14 +20,14 @@ function App() {
       <section id="Projetos">
         <Showwcase />
       </section>
-      <section id="Tecnologias">
+      <section id="Habilidades">
         <Techs />
       </section>
-         <section id="Contact">
-       <Contact/>
+      <section id="Contato">
+        <Contact />
       </section>
-   
-      <section id="footer">
+
+      <section id="Footer">
         <Footer />
       </section>
 

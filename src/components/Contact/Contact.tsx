@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section className="w-full  ">
       <TechCarousel />
-     <div className="w-full max-w-[1500px] mx-auto pt-[20vh] flex flex-col md:flex-row items-center gap-12">
+      <div className="w-full max-w-[1500px] mx-auto pt-[10vh] flex flex-col md:flex-row items-center gap-12">
 
         {/* Ilustração colada à direita */}
         <div className="w-full md:w-1/2 flex ">

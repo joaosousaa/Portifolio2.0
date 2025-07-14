@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { GiPolarStar } from "react-icons/gi";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-scroll";
-import { debounce } from 'lodash'; 
+import { debounce } from 'lodash';
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("");
@@ -17,7 +17,7 @@ function Navbar() {
         setActiveSection(section.id);
       }
     });
-  }, 200), []); 
+  }, 200), []);
 
   // Função de resize para fechar o menu no desktop
   const handleResize = useCallback(() => {
@@ -28,7 +28,7 @@ function Navbar() {
 
   // useEffect para scroll
   useEffect(() => {
-    handleScroll(); 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
@@ -55,7 +55,7 @@ function Navbar() {
           <span>| JSousa</span>
         </Link>
 
-        {/* Menu mobile */}  
+        {/* Menu mobile */}
         <div className="lg:hidden text-custom-blue flex flex-col space-y-2 cursor-pointer" onClick={toggleMenu}>
           <div className="w-6 h-0.5 bg-custom-blue"></div>
           <div className="w-6 h-0.5 bg-custom-blue"></div>
@@ -64,7 +64,7 @@ function Navbar() {
 
         {/* Links de navegação */}
         <ul className="hidden list-none font-gemunu font-medium text-custom-blue lg:flex items-center lg:space-x-14 xl:space-x-18 2xl:space-x-20 lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]">
-          {['Início', 'Sobre', 'Projetos', 'Tecnologias'].map((section) => (
+          {['Início', 'Sobre', 'Projetos', 'Habilidades', 'Contato'].map((section) => (
             <li key={section}>
               <Link
                 to={section}
@@ -97,7 +97,7 @@ function Navbar() {
       {isMenuOpen && (
         <div className="bg-opacity-50 backdrop-blur-sm w-full fixed top-[3.79rem] pb-3 flex flex-col space-y-4 z-[2]">
           <ul className="flex flex-col list-none text-[1.5rem] sm:text-[1.7rem] font-gemunu space-y-1.5 text-center">
-            {['Início', 'Sobre', 'Projetos', 'Tecnologias'].map((section) => (
+            {['Início', 'Sobre', 'Projetos', 'Habilidades', 'Contato'].map((section) => (
               <li key={section}>
                 <Link
                   to={section}
