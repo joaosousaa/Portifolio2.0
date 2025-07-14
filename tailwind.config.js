@@ -6,7 +6,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'custom-blue': 'rgb(17 61 129)', // Cor personalizada
+        'custom-blue': 'rgb(17 61 129)',
+        'custom-grey': 'rgb(156 163 175 / 29%)' // Cor personalizada
       },
       fontFamily: {
         Orbitron: ['Orbitron', 'sans-serif'],

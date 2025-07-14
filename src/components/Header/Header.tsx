@@ -67,7 +67,7 @@ const Header = () => {
                                 FALE COMIGO
                             </button>
                             <button className="border-2 border-custom-blue text-black-500 rounded-full lg:mt-5 mt-[0.8rem] text-[0.8rem] sm:text-[1rem] md:text-[1rem] lg:text-[1rem] xl:text-[1rem] 2xl:text-[1.2rem] py-2 px-4 sm:py-2 sm:px-4g md:py-3 md:px-6 xl:py-4 xl:px-8 hover:bg-custom-blue hover:text-white transition duration-300 ease-in-out animate-pulse">
-                                DOWNLOAD CV
+                               VER PROJETOS
                             </button>
                         </div>
                     </div>

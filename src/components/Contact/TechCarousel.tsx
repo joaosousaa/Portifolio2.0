@@ -50,22 +50,21 @@ const settings = {
 
 const TechCarousel = () => {
   return (
-
-    <div className="relative">
-      <div className="-skew-y-3 bg-blue-500 absolute top-[4vh] h-[7vh] w-full left-1/2 -translate-x-1/2 -translate-y-[50%]" />
+    <div className="relative ">
+      <div className="skew-y-3 bg-blue-500 absolute top-[4vh] h-[7vh] w-full left-1/2 -translate-x-1/2 -translate-y-[50%]" />
       
       <div className="mx-auto">
         <Slider {...settings}>
           {icons.map((tech, index) => (
             <div key={index} className="flex justify-center items-center bg-gray-300 ">
-              <div className="text-[4vh] p-[1.2vh]">{tech.icon}</div>
+              <div className="text-[4vh] p-[1.3vh]">{tech.icon}</div>
             </div>
           ))}
         </Slider>
       </div>
-
     </div>
   );
 };
+
 
 export default TechCarousel;

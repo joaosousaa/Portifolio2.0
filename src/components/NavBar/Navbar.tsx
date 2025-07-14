@@ -64,7 +64,7 @@ function Navbar() {
 
         {/* Links de navegação */}
         <ul className="hidden list-none font-gemunu font-medium text-custom-blue lg:flex items-center lg:space-x-14 xl:space-x-18 2xl:space-x-20 lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]">
-          {['Início', 'Sobre', 'Projetos', 'tecnologias'].map((section) => (
+          {['Início', 'Sobre', 'Projetos', 'Tecnologias'].map((section) => (
             <li key={section}>
               <Link
                 to={section}
@@ -97,7 +97,7 @@ function Navbar() {
       {isMenuOpen && (
         <div className="bg-opacity-50 backdrop-blur-sm w-full fixed top-[3.79rem] pb-3 flex flex-col space-y-4 z-[2]">
           <ul className="flex flex-col list-none text-[1.5rem] sm:text-[1.7rem] font-gemunu space-y-1.5 text-center">
-            {['Início', 'Sobre', 'Projetos', 'tecnologias'].map((section) => (
+            {['Início', 'Sobre', 'Projetos', 'Tecnologias'].map((section) => (
               <li key={section}>
                 <Link
                   to={section}
