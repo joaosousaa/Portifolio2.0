@@ -20,9 +20,11 @@ function App() {
       <section id="Projetos">
         <Showwcase />
       </section>
+
       <section id="Habilidades">
         <Techs />
       </section>
+
       <section id="Contato">
         <Contact />
       </section>

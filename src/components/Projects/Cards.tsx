@@ -3,7 +3,7 @@ import { useState } from "react";
 import Biblioteca from "../../assets/biblioteca.gif";
 import b from "../../assets/Captura de tela 2025-05-16 213705.png";
 
-import { GoLinkExternal, GoNote, GoChevronLeft, GoChevronRight } from "react-icons/go";
+import { GoLinkExternal, GoNote, GoChevronLeft, GoChevronRight, GoArrowUpRight  } from "react-icons/go";
 import { FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
 
 import { AnimatePresence, motion } from "framer-motion";
@@ -47,8 +47,8 @@ function BigCardGrid() {
                             alt={card.title}
                             className="rounded-xl w-full"
                         />
-                        <GoLinkExternal
-                            size={35}
+                        <GoArrowUpRight
+                            size={40}
                             className="absolute top-2 right-2 text-white p-1"
                         />
                         <div className=" absolute inset-0 flex flex-col justify-end px-2 py-2.5 sm:px-6 sm:py-6 lg:px-3.5 lg:py-6 xl:px-6 xl:py-8 bg-gradient-to-t from-black/80 to-transparent">
@@ -173,7 +173,7 @@ export default function CardsCarousel() {
     };
 
     return (
-        <div className="flex flex-col relative my-16 ">
+        <div className="flex flex-col relative mt-16 ">
             {/* Botão esquerdo */}
             <motion.button
                 className="botao absolute top-1/2 left-[-5px] sm:left-[-30px] z-10"
@@ -184,7 +184,7 @@ export default function CardsCarousel() {
             </motion.button>
 
             {/* Carrossel */}
-            <div className="relative w-full overflow-hidden pb-20 flex justify-center " style={{
+            <div className="relative w-full overflow-hidden pb-[16vh] flex justify-center " style={{
                 WebkitMask: `linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 11.08%, rgba(0,0,0,1) 88.18%, rgba(0,0,0,0) 98.64%)`,
                 WebkitMaskComposite: 'add',
                 maskComposite: 'add', // para compatibilidade
@@ -233,8 +233,8 @@ export default function CardsCarousel() {
                                         transition={{ duration: 0.3 }}
                                     />
                                     {/* Ícone no canto superior esquerdo */}
-                                    <GoLinkExternal
-                                        size={35}
+                                    <GoArrowUpRight
+                                        size={40}
                                         className="absolute top-2 right-2 text-white p-1"
                                     />
 

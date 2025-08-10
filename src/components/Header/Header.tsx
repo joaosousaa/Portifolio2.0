@@ -1,4 +1,4 @@
-import { FaGithub, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import Planet from "./Planet";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from '@react-three/drei';
@@ -23,7 +23,7 @@ const Header = () => {
                     </li>
                     <li className='hover:scale-125 transition-transform duration-300'>
                         <a href="http://" target="_blank" rel="noopener noreferrer" aria-label="Whstsapp" title="Whstsapp">
-                            <FaWhatsapp />
+                            <FaInstagram />
                         </a>
                     </li>
                 </ul>
@@ -46,28 +46,32 @@ const Header = () => {
                     </Canvas>
                 </div>
 
-                <div className="relative flex justify-center w-full md:w-1/2 max-lg:absolute max-lg:mt-[50vh]">
+                <div className="relative  w-full md:w-1/2 max-lg:absolute max-lg:mt-[50vh]">
                     {/* <div className="hidden lg:block absolute left-0 top-0 h-full w-[5px] bg-gradient-to-b from-blue-500 to-purple-500 rounded-full shadow-[0_0_15px_3px] shadow-blue-500/50 animate-pulse"></div> */}
 
 
                     {/* Conteúdo dos textos e botões */}
-                    <div className="max-lg:text-center relative space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5">
-                        <h3 className="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] lg:text-[1.2rem] xl:text-[1.5rem] 2xl:text-[1.7rem] font-Orbitron text-black whitespace-nowrap">
+                    <div className="max-lg:text-center relative">
+                        <h3 className="w-full text-[clamp(2rem,2vw,2.5rem)] font-Orbitron text-black whitespace-nowrap">
                             HELLO WORLD 🌎
                         </h3>
-                        <h1 className="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[2.8rem] xl:text-[3.5rem] 2xl:text-[4rem] font-Orbitron whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+                        <h1 className="py-2 w-full text-[clamp(2rem,4vw,5rem)] font-Orbitron whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
                             Eu sou João Sousa,
                         </h1>
-                        <h2 className="text-[1.1rem] sm:text-[1.4rem] md:text-[1.7rem] lg:text-[1.8rem] xl:text-[2.3rem] 2xl:text-[2.6rem] font-Orbitron text-black whitespace-nowrap">
+                        <h2 className=" w-full text-[clamp(2rem,3vw,3.3rem)]  font-Orbitron text-black whitespace-nowrap">
                             Desenvolvedor FullStack
                         </h2>
 
                         <div className="space-x-4">
-                            <button className="border-2 border-custom-blue text-black-500 rounded-full lg:mt-5 mt-[0.8rem] text-[0.8rem] sm:text-[1rem] md:text-[1rem] lg:text-[1rem] xl:text-[1rem] 2xl:text-[1.2rem] py-2 px-4 sm:py-2 sm:px-4g md:py-3 md:px-6 xl:py-4 xl:px-8 hover:bg-custom-blue hover:text-white transition duration-300 ease-in-out animate-pulse">
+                            <button className="border-2 border-custom-blue text-black-500 rounded-full lg:mt-10 mt-[0.8rem] text-[0.8rem] sm:text-[1rem] md:text-[1rem] lg:text-[1rem] xl:text-[1rem] 2xl:text-[1.2rem] py-2 px-4 sm:py-2 sm:px-4g md:py-3 md:px-6 xl:py-4 xl:px-8 hover:bg-custom-blue hover:text-white transition duration-300 ease-in-out animate-pulse" onClick={() => {
+                                document.getElementById("Contato")?.scrollIntoView({ behavior: "smooth" });
+                            }}>
                                 FALE COMIGO
                             </button>
-                            <button className="border-2 border-custom-blue text-black-500 rounded-full lg:mt-5 mt-[0.8rem] text-[0.8rem] sm:text-[1rem] md:text-[1rem] lg:text-[1rem] xl:text-[1rem] 2xl:text-[1.2rem] py-2 px-4 sm:py-2 sm:px-4g md:py-3 md:px-6 xl:py-4 xl:px-8 hover:bg-custom-blue hover:text-white transition duration-300 ease-in-out animate-pulse">
-                               VER PROJETOS
+                            <button className="border-2 border-custom-blue text-black-500 rounded-full lg:mt-10 mt-[0.8rem] text-[0.8rem] sm:text-[1rem] md:text-[1rem] lg:text-[1rem] xl:text-[1rem] 2xl:text-[1.2rem] py-2 px-4 sm:py-2 sm:px-4g md:py-3 md:px-6 xl:py-4 xl:px-8 hover:bg-custom-blue hover:text-white transition duration-300 ease-in-out animate-pulse"  onClick={() => {
+                                document.getElementById("Projetos")?.scrollIntoView({ behavior: "smooth" });
+                            }} >
+                                VER PROJETOS
                             </button>
                         </div>
                     </div>

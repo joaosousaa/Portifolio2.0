@@ -11,7 +11,7 @@ import {
 
 
 function Techs() {
-  const iconSize = 80; // Define tamanho base para os ícones
+  const iconSize = 70; // Define tamanho base para os ícones
 
   const icons = [
     { icon: <FaReact size={iconSize} color="#61DBFB" />, name: "React" },
@@ -67,19 +67,19 @@ function Techs() {
 
       {/* Conteúdo ajustado para subir e encostar */}
       <div className="bg-gray-100 -mt-[1px]">
-        <div className="max-w-[1500px] pt-[4vh] pb-[25vh] m-auto ">
+        <div className="max-w-[1300px] pt-[16vh] pb-[25vh] m-auto ">
           <div className="p-[4px] bg-gradient-to-r from-blue-500 to-purple-500 rounded-full">
-            <div className="bg-white rounded-full px-[12vh] pb-[10vh] pt-[5vh] flex flex-col items-center">
+            <div className="bg-white rounded-full px-[17vh] pb-[6vh] pt-[3vh] flex flex-col items-center">
 
               {/* Título centralizado com gradiente */}
               <h1 className="text-[2.5rem] bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 font-semibold mb-10 text-center">
-              Habilidades Práticas
+                HABILIDADES
               </h1>
 
               {/* Grid de tecnologias */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-20 justify-center">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-20 justify-center ">
                 {icons.map((item, index) => (
-                  <div key={index} className="flex flex-col items-center">
+                  <div key={index} className="flex flex-col items-center hover:scale-125 transition-transform duration-5">
                     {item.icon}
                     <p className="mt-4 text-lg font-semibold text-gray-700">
                       {item.name}

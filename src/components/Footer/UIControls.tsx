@@ -58,7 +58,7 @@ const ScrollArrows = () => {
       {!isScrolled ? (
         <button
           className="arrow text-[55px] md:text-[60px] lg:text-[65px] xl:text-[70px] text-custom-blue animate-bounce"
-          onClick={() => scrollToSection("footer")}
+          onClick={() => scrollToSection("Footer")}
           aria-label="Scroll to Footer"
         >
           <MdKeyboardDoubleArrowDown />
@@ -76,4 +76,11 @@ const ScrollArrows = () => {
   );
 };
 
-export { DarkModeToggle, ScrollArrows };
+const UIControlsWrapper = () => (
+  <>
+    <DarkModeToggle />
+    <ScrollArrows />
+  </>
+);
+
+export default UIControlsWrapper;

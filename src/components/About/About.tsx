@@ -1,5 +1,5 @@
 import foto from "../../assets/joao1.png";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import TechCarousel from "./TechCarousel";
 function About() {
@@ -8,7 +8,7 @@ function About() {
         <div>
             <div className="bg-gray-100">
                 <TechCarousel />
-                <div className="w-full max-w-[1500px]  mx-auto pt-[20vh] pb-[10vh]">
+                <div className="w-full max-w-[1500px]  mx-auto pt-[20vh] pb-[16vh]">
                     {/* Título e Subtítulo 
                     <div className="relative flex justify-center my-[5vh]">
                         <h1 className="title-size text-gray-200">About</h1>
@@ -29,7 +29,9 @@ function About() {
                                     Desde 2020, quando a programação me chamou a atenção pelo seu potencial de conectar pessoas e resolver problemas, venho me aprimorando em tecnologias de front-end e back-end. Desenvolvo páginas e sistemas web responsivos, sempre buscando novas oportunidades para aplicar e expandir minhas habilidades em desenvolvimento web.
                                 </p>
                                 <div className="flex items-center gap-6 mt-6">
-                                    <button className="rounded-full bg-blue-900 px-[1rem] py-[0.8rem] sm:px-[1.4rem] sm:py-[0.9rem] text-[0.8rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-medium text-white transition duration-200 hover:bg-blue-800 active:bg-blue-700">
+                                    <button className="rounded-full bg-blue-900 px-[1rem] py-[0.8rem] sm:px-[1.4rem] sm:py-[0.9rem] text-[0.8rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-medium text-white transition duration-200 hover:bg-blue-800 active:bg-blue-700" onClick={() => {
+                                        document.getElementById("Projetos")?.scrollIntoView({ behavior: "smooth" });
+                                    }}>
                                         PROJETOS
                                     </button>
                                     <h3 className="text-gray-700 text-[0.85rem] sm:text-[1.2rem] md:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]">💻 +10 Projetos Finalizados</h3>
@@ -51,7 +53,7 @@ function About() {
                                                     <FaLinkedin />
                                                 </a>
                                                 <a href="https://wa.me" target="_blank" rel="noopener noreferrer" className="relative z-2 bg-blue-500 rounded-full p-1 text-[1.8rem] sm:text-[2.3rem] md:text-[2.3rem] lg:text-[2.2rem] xl:text-[2.4rem] 2xl:text-[2.4rem]">
-                                                    <FaWhatsapp />
+                                                    <FaInstagram />
                                                 </a>
                                             </div>
                                             {/* Localização */}

@@ -1,16 +1,14 @@
 
-import { DarkModeToggle, ScrollArrows } from './UIControls';
+import UIControlsWrapper from "./UIControls"; // ✅ certo para export default
+
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
     return (
         <footer className=''>
             <div>
-                <DarkModeToggle />
+                <UIControlsWrapper />
             </div>
 
-            <div>
-                <ScrollArrows />
-            </div>
             <div className="h-[30vh] max-w-[1500px] mx-auto  flex flex-col md:flex-row items-center justify-between gap-4">
                 <div className="">
                     <h1 className='font-Orbitron text-[2.5rem] text-custom-blue font-medium'>JSousa</h1>
