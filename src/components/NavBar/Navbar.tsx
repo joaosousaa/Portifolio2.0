@@ -111,10 +111,10 @@ function Navbar() {
                 key={index}
                 href={
                   index === 0
-                    ? "https://github.com"
+                    ? "https://github.com/joaosousaa"
                     : index === 1
                     ? "https://linkedin.com"
-                    : "https://wa.me"
+                    : "https://www.instagram.com/dev.jsousa/"
                 }
                 target="_blank"
                 rel="noopener noreferrer"

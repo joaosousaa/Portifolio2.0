@@ -5,12 +5,12 @@ import { MdEmail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   return (
-    <section className="w-full  ">
+    <section className="w-full">
       <TechCarousel />
-      <div className="w-full max-w-[1500px] mx-auto mt-[16vh] mb-[16vh] flex flex-col md:flex-row items-center gap-12">
+      <div className="w-full max-w-[1500px] px-4 sm:px-6 lg:px-8 mx-auto mt-[16vh] mb-[16vh] flex flex-col lg:flex-row items-center gap-12">
 
-        {/* Ilustração colada à direita */}
-        <div className="w-full md:w-1/2 flex ">
+        {/* Ilustração colada à direita, centralizada abaixo de lg */}
+        <div className="w-full lg:w-1/2 flex justify-center lg:text-center">
           <img
             src={robo}
             alt="Ilustração de contato"
@@ -18,9 +18,9 @@ const Contact = () => {
           />
         </div>
 
-        {/* Conteúdo colado à esquerda */}
-        <div className="w-full md:w-1/2 text-left">
-          <div className="max-w-[700px]">
+        {/* Conteúdo colado à esquerda, texto centralizado abaixo de lg */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <div className="max-w-[700px] mx-auto lg:mx-0">
             <h2 className="text-[2rem] sm:text-[2.3rem] md:text-[2.5rem] font-rubik py-3">
               VAMOS CONSTRUIR ALGO JUNTOS?
             </h2>
@@ -64,17 +64,16 @@ const Contact = () => {
               </li>
             </ul>
 
-
-
             <a
               href="mailto:joao.dev@email.com"
-              className="border-2 border-custom-blue inline-block mt-10 rounded-full bg-blue-900 px-[1rem] py-[0.8rem] sm:px-[1.4rem] sm:py-[0.9rem] text-[0.8rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-medium text-white transition duration-200 hover:bg-blue-800 active:bg-blue-700 transition duration-2000 ease-in-out animate-pulse"
+              className="border-2 border-custom-blue inline-block mt-10 rounded-full bg-blue-900 px-[1rem] py-[0.8rem] sm:px-[1.4rem] sm:py-[0.9rem] text-[0.8rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-medium text-white transition duration-200 hover:bg-blue-800 active:bg-blue-700 animate-pulse"
             >
               Entrar em contato
             </a>
           </div>
         </div>
       </div>
+
 
       <div className="h-[2px] max-w-[1500px] bg-black mx-auto" />
     </section>

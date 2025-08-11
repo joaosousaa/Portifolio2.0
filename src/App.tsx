@@ -24,13 +24,15 @@ function App() {
       <section id="Habilidades">
         <Techs />
       </section>
+      <section className="bg-gradient-to-bl from-gray-100 via-gray-100/80 to-blue-600/40">
 
-      <section id="Contato">
-        <Contact />
-      </section>
+        <section id="Contato">
+          <Contact />
+        </section>
 
-      <section id="Footer">
-        <Footer />
+        <section id="Footer">
+          <Footer />
+        </section>
       </section>
 
     </>

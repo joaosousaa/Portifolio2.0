@@ -8,7 +8,9 @@ function About() {
         <div>
             <div className="bg-gray-100">
                 <TechCarousel />
-                <div className="w-full max-w-[1500px]  mx-auto pt-[20vh] pb-[16vh]">
+                <div className="w-full max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 pt-[20vh] pb-[16vh]">
+    {/* Seu conteúdo aqui */}
+
                     {/* Título e Subtítulo 
                     <div className="relative flex justify-center my-[5vh]">
                         <h1 className="title-size text-gray-200">About</h1>

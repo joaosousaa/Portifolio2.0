@@ -3,7 +3,7 @@ import { useState } from "react";
 import Biblioteca from "../../assets/biblioteca.gif";
 import b from "../../assets/Captura de tela 2025-05-16 213705.png";
 
-import { GoLinkExternal, GoNote, GoChevronLeft, GoChevronRight, GoArrowUpRight  } from "react-icons/go";
+import { GoNote, GoChevronLeft, GoChevronRight, GoArrowUpRight } from "react-icons/go";
 import { FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
 
 import { AnimatePresence, motion } from "framer-motion";
@@ -33,7 +33,7 @@ function BigCardGrid() {
         <div>
 
             <div className="">
-                <h3 className="text-[2.5rem] sm:text-[1.8rem] md:text-[1.9rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2.5rem]  bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 font-semibold mb-2">
+                <h3 className="text-[2.5rem] sm:text-[1.8rem] md:text-[1.9rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2.5rem] bg-clip-text text-transparent bg-gradient-to-r from-black to-purple-500 font-semibold mb-2">
                     Projetos Exclusivos
                 </h3>
                 <div className="h-[2px] bg-gray-200 mx-auto" />
@@ -185,7 +185,7 @@ export default function CardsCarousel() {
 
             {/* Carrossel */}
             <div className="relative w-full overflow-hidden pb-[16vh] flex justify-center " style={{
-                WebkitMask: `linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 11.08%, rgba(0,0,0,1) 88.18%, rgba(0,0,0,0) 98.64%)`,
+                WebkitMask: `linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10.64%, rgba(0,0,0,1) 88.18%, rgba(0,0,0,0) 100.64%)`,
                 WebkitMaskComposite: 'add',
                 maskComposite: 'add', // para compatibilidade
             }}>

@@ -30,29 +30,37 @@ const Showwcase = () => {
 
     return (
         <div className="rounded-[6vh] pt-[16vh]">
-            <div className="w-full max-w-[1500px] px-3 sm:px-8 m-auto">
-                <nav className="overflow-x-auto scrollbar-hide">
-                    <ul className="flex flex-nowrap justify-start sm:justify-center gap-4 px-2">
-                        {Object.keys(sections).map((section) => (
-                            <li key={section} className="shrink-0">
-                                <button
-                                    className={`uppercase border-2 border-black font-semibold px-[1rem] py-[0.8rem] sm:px-[1.4rem] sm:py-[0.9rem] text-[0.8rem] sm:text-[1rem] md:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] rounded-full transition-all duration-300 transform whitespace-nowrap
-                                        ${active === section
-                                            ? "bg-blue-900 text-white border-none"
-                                            : "scale-90 hover:scale-100 hover:text-white"}`}
-                                    aria-pressed={active === section}
-                                    onClick={() =>
-                                        setActive(section as "Projetos" | "Certificados" | "Eventos")
-                                    }
-                                >
-                                    {section === "Eventos" ? "Eventos Tecnologias" : section}
-                                </button>
-                            </li>
-                        ))}
-                    </ul>
+            <div className="w-full max-w-[1500px] px-4 sm:px-6 lg:px-8 m-auto">
+                <nav className="w-full max-w-[620px] mx-auto bg-blue-600 p-2 rounded-full shadow-sm py-3">
+                    <div className="overflow-x-auto scrollbar-hide">
+                        <ul className="flex flex-nowrap sm:flex-wrap justify-start sm:justify-center gap-2 min-w-max sm:min-w-0">
+                            {Object.keys(sections).map((section) => {
+                                const isActive = active === section;
+                                return (
+                                    <li key={section} className="shrink-0">
+                                        <button
+                                            className={`uppercase font-semibold px-4 sm:px-5 py-3 rounded-full text-sm sm:text-lg md:text-xl transition-all duration-300 whitespace-nowrap
+                ${isActive
+                                                    ? "bg-white text-blue-600"
+                                                    : "text-white hover:bg-white hover:text-blue-600"}`}
+                                            aria-pressed={isActive}
+                                            onClick={() =>
+                                                setActive(section as "Projetos" | "Certificados" | "Eventos")
+                                            }
+                                        >
+                                            {section === "Eventos" ? "Eventos Tecnologias" : section}
+                                        </button>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
                 </nav>
 
-                <div className="mt-8 md:mt-10">{sections[active].content}</div>
+
+
+
+                <div className="mt-8 md:mt-20">{sections[active].content}</div>
             </div>
         </div>
     );

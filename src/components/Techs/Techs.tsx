@@ -7,54 +7,27 @@ import {
   FaGitAlt,
   FaGithub,
   FaDatabase,
+  FaPhp
 } from "react-icons/fa";
-
-
+import { RiTailwindCssFill } from "react-icons/ri";
+import { PiFigmaLogoFill } from "react-icons/pi";
 function Techs() {
-  const iconSize = 70; // Define tamanho base para os ícones
-
   const icons = [
-    { icon: <FaReact size={iconSize} color="#61DBFB" />, name: "React" },
-    { icon: <FaHtml5 size={iconSize} color="#e34c26" />, name: "HTML" },
-    { icon: <FaCss3Alt size={iconSize} color="#264de4" />, name: "CSS" },
-    { icon: <FaJsSquare size={iconSize} color="#f0db4f" />, name: "JavaScript" },
-    { icon: <FaNodeJs size={iconSize} color="#68a063" />, name: "Node.js" },
-    { icon: <FaGitAlt size={iconSize} color="#f1502f" />, name: "Git" },
-    { icon: <FaGithub size={iconSize} color="#000" />, name: "GitHub" },
-    { icon: <FaDatabase size={iconSize} color="#00618a" />, name: "MySQL" },
-    { icon: <FaDatabase size={iconSize} color="#008" />, name: "SQL" },
-    { icon: <FaDatabase size={iconSize} color="#008" />, name: "SQL" },
-    { icon: <FaDatabase size={iconSize} color="#008" />, name: "SQL" },
-    {
-      icon: (
-        <div className="w-20 h-20 flex items-center justify-center text-2xl font-bold text-[#777bb4] border border-[#777bb4] rounded-lg">
-          PHP
-        </div>
-      ),
-      name: "PHP",
-    },
-    {
-      icon: (
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-          alt="Tailwind CSS"
-          className="w-20 h-20 object-contain"
-        />
-      ),
-      name: "Tailwind CSS",
-    },
-    {
-      icon: (
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-          alt="Figma"
-          className="w-20 h-20 object-contain"
-        />
-      ),
-      name: "Figma",
-    },
+    { Icon: FaReact, color: "#61DBFB", name: "React" },
+    { Icon: FaHtml5, color: "#e34c26", name: "HTML" },
+    { Icon: FaCss3Alt, color: "#264de4", name: "CSS" },
+    { Icon: FaJsSquare, color: "#f0db4f", name: "JavaScript" },
+    { Icon: FaNodeJs, color: "#68a063", name: "Node.js" },
+    { Icon: FaGitAlt, color: "#f1502f", name: "Git" },
+    { Icon: FaGithub, color: "#000", name: "GitHub" },
+    { Icon: FaDatabase, color: "#00618a", name: "MySQL" },
+    { Icon: FaDatabase, color: "#008", name: "SQL" },
+    { Icon: FaDatabase, color: "#008", name: "SQL" },
+    { Icon: FaDatabase, color: "#008", name: "SQL" },
+    { Icon: RiTailwindCssFill, color: "rgba(16, 143, 202, 1)", name: "Tailwind CSS" },
+    { Icon: FaPhp, color: "#008", name: "PHP" },
+    { Icon: PiFigmaLogoFill, color: "rgba(174, 34, 209, 1)", name: "Figma" },
   ];
-
   return (
     <div>
       {/* Div inclinada */}
@@ -66,33 +39,41 @@ function Techs() {
       />
 
       {/* Conteúdo ajustado para subir e encostar */}
-      <div className="bg-gray-100 -mt-[1px]">
-        <div className="max-w-[1300px] pt-[16vh] pb-[25vh] m-auto ">
-          <div className="p-[4px] bg-gradient-to-r from-blue-500 to-purple-500 rounded-full">
-            <div className="bg-white rounded-full px-[17vh] pb-[6vh] pt-[3vh] flex flex-col items-center">
+ <div className="bg-gray-100 -mt-[1px]">
+  <div className="max-w-[1300px] px-4 sm:px-6 lg:px-8 pt-[16vh] pb-[25vh] m-auto">
+    <div
+      className="p-[4px] bg-gradient-to-r from-blue-500 to-purple-500 rounded-[4rem] sm:rounded-[6rem] lg:rounded-full"
+      style={{
+        boxShadow:
+          "0 0 10px #3b83f660, 0 0 20px #3b83f63d, 0 0 30px #8a5cf64b, 0 0 40px #8a5cf654"
+      }}
+    >
+      <div className="bg-white rounded-[4rem] sm:rounded-[6rem] lg:rounded-full lg:px-[15vh] px-[8vh] pb-[6vh] pt-[3vh] flex flex-col items-center">
 
-              {/* Título centralizado com gradiente */}
-              <h1 className="text-[2.5rem] bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 font-semibold mb-10 text-center">
-                HABILIDADES
-              </h1>
+        {/* Título centralizado com gradiente */}
+        <h1 className="text-[2.5rem] bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 font-semibold mb-10 text-center">
+          HABILIDADES
+        </h1>
 
-              {/* Grid de tecnologias */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-20 justify-center ">
-                {icons.map((item, index) => (
-                  <div key={index} className="flex flex-col items-center hover:scale-125 transition-transform duration-5">
-                    {item.icon}
-                    <p className="mt-4 text-lg font-semibold text-gray-700">
-                      {item.name}
-                    </p>
-                  </div>
-                ))}
-              </div>
+        {/* Grid de tecnologias */}
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7 gap-20 justify-center">
+          {icons.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center hover:scale-125 transition-transform duration-500 text-5xl sm:text-6xl lg:text-6xl xl:text-7xl"
+              style={{ color: item.color }}
+            >
+              <item.Icon />
+              <p className="mt-4 text-lg font-semibold text-gray-700">{item.name}</p>
             </div>
-          </div>
-
-
+          ))}
         </div>
+
       </div>
+    </div>
+  </div>
+</div>
+
     </div>
 
   );

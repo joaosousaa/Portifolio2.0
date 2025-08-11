@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px #3b82f6, 0 0 20px #3b82f6, 0 0 30px #8b5cf6, 0 0 40px #8b5cf6;
+  }
+  50% {
+    box-shadow: 0 0 20px #3b82f6, 0 0 40px #3b82f6, 0 0 60px #8b5cf6, 0 0 80px #8b5cf6;
+  }
+}
+
+.neon-border {
+  animation: neonPulse 2s infinite;
+}
+
+
 body {
   background-color: rgb(255, 255, 255);
 }

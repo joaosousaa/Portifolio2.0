@@ -9,7 +9,7 @@ const Footer = () => {
                 <UIControlsWrapper />
             </div>
 
-            <div className="h-[30vh] max-w-[1500px] mx-auto  flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="h-[30vh] max-w-[1500px] mx-auto flex flex-col md:flex-row md:items-center md:justify-between  mt-[5vh] lg:mt-[0] gap-4 px-4 sm:px-6 lg:px-8 ">
                 <div className="">
                     <h1 className='font-Orbitron text-[2.5rem] text-custom-blue font-medium'>JSousa</h1>
                     <h6 className='text-xl text-custom-blue font-medium'>©2024 por <a href=""> JSousa.</a> </h6>

@@ -12,7 +12,7 @@ const Header = () => {
             <div className="absolute top-1/2 left-3 md:left-4 transform -translate-y-1/2 space-y-4  z-[1]">
                 <ul className='space-y-4 text-custom-blue text-[1.8rem] sm:text-[2rem] lg:text-[2rem] xl:text-[2.4rem] 2xl:text-[2.4rem]'>
                     <li className='hover:scale-125 transition-transform duration-300'>
-                        <a href="/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                        <a href="https://github.com/joaosousaa" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
                             <FaGithub />
                         </a>
                     </li>
@@ -22,7 +22,7 @@ const Header = () => {
                         </a>
                     </li>
                     <li className='hover:scale-125 transition-transform duration-300'>
-                        <a href="http://" target="_blank" rel="noopener noreferrer" aria-label="Whstsapp" title="Whstsapp">
+                        <a href="https://www.instagram.com/dev.jsousa/" target="_blank" rel="noopener noreferrer" aria-label="Whstsapp" title="Whstsapp">
                             <FaInstagram />
                         </a>
                     </li>
